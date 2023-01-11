@@ -1,0 +1,579 @@
+{
+	"info": {
+		"_postman_id": "85184d53-6743-4847-b987-c5bb56abe5a0",
+		"name": "backend_tienda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22480909"
+	},
+	"item": [
+		{
+			"name": "Get lista",
+			"item": [
+				{
+					"name": "proveedores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/proveedores/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"proveedores",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/productos/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ventas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ventas/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ventas",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "compras",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/compras/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compras",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get buscar id",
+			"item": [
+				{
+					"name": "ventas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ventas/buscar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ventas",
+								"buscar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/productos/buscar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"buscar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "proveedores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/proveedores/buscar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"proveedores",
+								"buscar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "compras",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/compras/buscar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compras",
+								"buscar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ventas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ventas/buscar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ventas",
+								"buscar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post agregar",
+			"item": [
+				{
+					"name": "clientes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Jorge\",\r\n    \"apellido\":\"Gomez\",\r\n    \"dni\":\"36754455\",\r\n    \"telefono\":\"6345-5343\",\r\n    \"direccion\":\"Anchorena 432, CABA\",\r\n    \"fechaAlta\":\"2023-01-10\",\r\n    \"fechaBaja\":\"9999-12-31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "proveedores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Consumo SA\",\r\n    \"cuit\":\"27-42365475-9\",\r\n    \"telefono\":\"6532-1111\",\r\n    \"direccion\":\"Sarmiento 333, CABA\",\r\n    \"fechaAlta\":\"2023-01-10\",\r\n    \"fechaBaja\":\"9999-12-31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/proveedores/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"proveedores",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "productos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Galletitas Pepas\",\r\n    \"descripcion\": \"Caja por 10 paquetes\",\r\n    \"precio\": 2000,\r\n    \"stock\": 5,\r\n    \"fechaAlta\": \"2023-01-10\",\r\n    \"fechaBaja\": \"9999-12-31\",\r\n    \"proveedor\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/productos/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ventas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"precioTotal\":3500,\r\n    \"cantidad\":1,\r\n    \"fechaVenta\":\"2023-01-10\",\r\n    \"producto\":7,\r\n    \"cliente\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ventas/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ventas",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "compras",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"precioTotal\":6000,\r\n    \"cantidad\":3,\r\n    \"fechaCompra\":\"2023-01-10\",\r\n    \"producto\":3,\r\n    \"proveedor\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/compras/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compras",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put actualizar",
+			"item": [
+				{
+					"name": "clientes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Jorge\",\r\n    \"apellido\":\"Gomez\",\r\n    \"dni\":\"36754455\",\r\n    \"telefono\":\"6345-5343\",\r\n    \"direccion\":\"Anchorena 432, CABA\",\r\n    \"fechaAlta\":\"2023-01-10\",\r\n    \"fechaBaja\":\"9999-12-31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/actualizar/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"actualizar",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "proveedores",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Consumo SA\",\r\n    \"cuit\":\"27-42365475-9\",\r\n    \"telefono\":\"6532-1111\",\r\n    \"direccion\":\"Sarmiento 333, CABA\",\r\n    \"fechaAlta\":\"2023-01-10\",\r\n    \"fechaBaja\":\"2023-01-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/proveedores/actualizar/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"proveedores",
+								"actualizar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "productos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Galletitas Pepas\",\r\n    \"descripcion\": \"Caja por 10 paquetes\",\r\n    \"precio\": 2000,\r\n    \"stock\": 3,\r\n    \"fechaAlta\": \"2023-01-10\",\r\n    \"fechaBaja\": \"9999-12-31\",\r\n    \"proveedor\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/productos/actualizar/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"actualizar",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get ventas por fecha",
+			"item": [
+				{
+					"name": "ventas por fecha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ventas/filtrar/2023-01-10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ventas",
+								"filtrar",
+								"2023-01-10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get compras por proveedor",
+			"item": [
+				{
+					"name": "compras por proveedor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/compras/filtrar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compras",
+								"filtrar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get productos con stock bajo variable",
+			"item": [
+				{
+					"name": "prod. con stock menor a",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/productos/stock-bajo?stock=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"stock-bajo"
+							],
+							"query": [
+								{
+									"key": "stock",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Api Rest Externa",
+			"item": [
+				{
+					"name": "lista de productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://lmz22.wiremockapi.cloud/lista-de-productos",
+							"protocol": "https",
+							"host": [
+								"lmz22",
+								"wiremockapi",
+								"cloud"
+							],
+							"path": [
+								"lista-de-productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consulta desde mi api",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
