@@ -30,7 +30,7 @@
 					"response": []
 				},
 				{
-					"name": "clientes",
+					"name": "clientes con sus compras",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -566,10 +566,22 @@
 					"response": []
 				},
 				{
-					"name": "consulta desde mi api",
+					"name": "consulta desde mi api modificando campos",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/productos/api-externa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"api-externa"
+							]
+						}
 					},
 					"response": []
 				}
